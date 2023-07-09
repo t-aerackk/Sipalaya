@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block foot %}
+    {% load static %}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .contact-info {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    .contact-info a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Information</h1>
+
+  <div class="contact-info">
+    <p>
+      If you have any questions or inquiries, please feel free to contact us:
+      <br>
+      Email: <a href="infotech@sipalaya.com">infotech@sipalaya.com</a>
+      <br>
+      Email: <a href="sipalayainfotech01@gmail.com">sipalayainfotech01@gmail.com</a>
+      <br>
+      Phone: <a href="tel:+977 9818968546">+977 9818968546</a>
+      <br>
+      Phone: <a href="tel:+977 9860552717">+977 9860552717</a>
+      <br>
+    </p>
+    <p>You can also visit our office at Balkumari nearby CCRC college from Sun-Thu(8am-6pm)</p>
+  </div>
+</body>
+
+{% endblock %}

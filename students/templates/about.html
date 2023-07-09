@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block foot %}
+{% load static %}
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        p {
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .team-member h3{
+            margin: 10px;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to our company! We are a team of dedicated professionals who strive to provide excellent services to our clients.</p>
+        <h1>Background</h1>
+        <p>Sipalaya has been helping professionals and students advance their careers in the tech industry for years. We are dedicated to providing high-quality, comprehensive training programs that are tailored to meet the needs of our students.Our team of instructors are all industry experts with years of experience in their fields. They are committed to sharing their knowledge and skills with our students and providing personalized support throughout the training process. We offer a wide range of courses covering the latest technologies and best practices in the industry. Our courses are designed to be interactive and hands-on, so that students can gain practical experience and build their skills. We are proud to have helped many students and professionals advance their careers and achieve their goals. We are confident that we can help you do the same.</p>
+        <h1>Mission & Vision</h1>
+        <h3>Mission:</h3>
+        <p>Our mission is to provide high-quality, comprehensive IT training and development programs that empower professionals and students to advance their careers and achieve their goals.</p>
+        <h3>Vision:</h3>
+        <p>Our vision is to be the leading provider of IT training and development programs, recognized for our commitment to excellence and our ability to help students succeed in the tech industry.</p>
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="{% static './images/himalsir.jpg'%}" alt="Team Member 1">
+            <h3>Er Himal Rawal</h3>
+            <p>Position: CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="{% static './images/sumansir.jpg' %}" alt="Team Member 2">
+            <h3>Suman Tamang</h3>
+            <p>Position: Python developer</p>
+        </div>
+        <div class="team-member">
+            <img src="{% static './images/mikey.jpg' %}" alt="Team Member 3">
+            <h3>Mike Tyson</h3>
+            <p>Position: Security Guard</p>
+        </div>
+    </div>
+{% endblock %}

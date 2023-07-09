@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Sipalaya Blog{% endblock %}
+
+{% block foot %}
+{% load static %}
+<body>
+  <h1>Welcome to Sipalaya Infotech</h1>
+
+  <div class="image-container">
+    <img src="{% static './images/student.jpg' %}" alt="Image 1" height=300px; width=400px;>
+    <img src="{% static './images/sipp.jpg' %}" alt="Image 2" height=300px; width=400px;>
+  </div>
+  <div class="textt">
+    <h3>Our services</h3>
+    <p>We offer variety of services which is located on our homepage you can go and view the contents.</p>
+</body>
+{% endblock %}

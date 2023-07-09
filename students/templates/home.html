@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block foot %}
+<style>
+<link rel="stylesheet" href="./static/css/home.css">
+</style>
+<body>
+    <div class="theme">
+        <div class="text">
+            <h1>Sipalaya Info Tech</h1>
+            <h4>"Learn, Grow, Practice, Lead: Ignite Your Leadership Together With Us."</h4>
+        </div>
+        <div class="futwa">
+            <img src="{% static './images/class.jpg' %}" alt="classroom" width="400" height="300">
+            <img src="{% static './images/code.jpg' %}" alt="coding" width="400" height="300">
+            <img src="{% static './images/teach.jpg' %}" alt="monitor" width="400" height="300">  
+        </div>
+    </div>
+    <div class="ss">
+        <div class="text">
+            <h1>Our Services</h1>
+            <h4>We offer a variety of services to our valuable customers.</h4>
+        </div>
+        <div class="Services">
+             <div class="s1">
+                <img src="{% static './images/aws.png' %}" alt="amazon webservice" width="400" height="250">
+                <p>Amazon Web Service Essentials</p>  
+            </div>
+             <div class="s2">
+                <img src="{% static './images/C#.png' %}" alt="dotnet" width="400" height="250">
+                <p>C# and ASP.net</p>  
+            </div>
+             <div class="s3">
+                <img src="{% static './images/flutter.png' %}" alt="flutter" width="400" height="250">
+                <p>Python with Django</p>  
+            </div>
+        </div>
+        <div class="services2">
+            <div class="s21">
+                <img src="{% static './images/frontend.png' %}" alt="frontend-backend" width="400" height="250"> 
+                <p>Frontend and Backend programs</p>
+            </div>
+            <div class="s21">
+                <img src="{% static './images/html.png' %}" alt="html-css" width="400" height="250"> 
+                <p>HTML, CSS and JS</p>
+            </div>
+            <div class="s21">
+                <img src="{% static './images/python.png' %}" alt="python" width="400" height="250"> 
+                <p>Python with Django</p>
+            </div>
+        </div>
+        <div class="Service1">
+            <div class="s11">
+               <img src="{% static './images/php.jpg' %}" alt="PHP-Laravel" width="400" height="250">
+               <p>PHP with Laravel</p>  
+           </div>
+            <div class="s12">
+               <img src="{% static './images/mqsql.png' %}" alt="MYSQL Database" width="400" height="250">
+               <p>Database with MQSQL</p>  
+           </div>
+            <div class="s13">
+               <img src="{% static './images/mern.png' %}" alt="mern" width="400" height="250">
+               <p>MERN Stack</p>  
+            </div>
+        </div>
+    </div>
+{% endblock %}
